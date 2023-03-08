@@ -1,0 +1,1 @@
+<?php$a=array_fill(0,30000,0);$c=file_get_contents($argv[1]);$p=0;$s=[];$r=0;for($i=0;isset($c[$i]);$i++){$r?match($c[$i]){'['=>$r++,']'=>$r--,default=>0}:match($c[$i]){'>'=>$p++,'<'=>$p--,'+'=>$a[$p]++,'-'=>$a[$p]--,'.'=>print chr($a[$p]),','=>$a[$p]=fgetc(STDIN),'['=>!$a[$p]?$r=1:($s[]=$i),']'=>$i=(end($s)),default=>0,};}
