@@ -5,3 +5,4 @@ The goal is to implement smalelst possible BF interpreter in PHP, just for fun a
 ## Ideas
 
 recursion
+use c lol
